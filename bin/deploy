@@ -1,6 +1,11 @@
-#!/usr/bin/sh
+#!/bin/sh
 
 git checkout gh-pages
 git merge master
+
+# add asset compilation stage here
+# remove sources after compilation
+# git add .
+# git commit -am "Auto-commit from deployment script"
 git push -u origin gh-pages
 git checkout master
